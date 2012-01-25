@@ -1,0 +1,20 @@
+{% extends "newsletter_base.html" %}
+
+{% block title %}Subscribe to newsletter{% endblock %}
+
+{% block content %}
+    <p>Do you want to subscribe to newsletter?</p>
+    <form action="" method="post">
+        <div>
+            {% csrf_token %}	
+            
+            {% for field in form %}	
+                <p>{{ field.label_tag }}</p>
+                    {{ field.errors }}				      	
+                <p class="input">{{ field }}</p>
+            {% endfor %}
+            <input type="submit" id="submit" value="Subscribe!" />
+        </div>				
+    </form>
+    <p class="unsubscribe">(you can <a href="{{ SITE_URL }}/newsletter/unsubscribe/">unsubscribe</a> also)</p>
+{% endblock %}

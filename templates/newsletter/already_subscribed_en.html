@@ -1,0 +1,7 @@
+{% extends "newsletter_base.html" %}
+{% block title %}Already subscribed!{% endblock %}
+
+{% block content %}
+    <p>You are already subscribed to newsletter!</p>
+    <p>(you want to unsubscribe? click on following <a href="{{ SITE_URL }}/newsletter/unsubscribe/key={{ subscription.token }}">link</a>)</p>
+{% endblock %}

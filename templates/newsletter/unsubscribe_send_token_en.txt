@@ -1,0 +1,9 @@
+Hi,
+            
+you have sent request to unsubscribe to newsletter for this site. If you really sent this request, then click on the following link:
+%s
+
+or you can ignore this message.
+
+Kind regards,
+My site

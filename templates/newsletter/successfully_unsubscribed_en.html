@@ -1,0 +1,8 @@
+{% extends "newsletter_base.html" %}
+
+{% block title %}Unsubscription successful!{% endblock %}
+
+{% block content %}	
+    <p>You have successfully unsubscribed to newsletter!</p>
+    <p>(if you want to subscribe to newsletter, click on following <a href="{{ SITE_URL }}/newsletter/subscribe/key={{ token }}">link</a>)</p>
+{% endblock %}
